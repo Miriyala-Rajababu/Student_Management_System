@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <form method="POST">
+            <!-- Form content here --><h1>STUDENTS MANAGEMENT DETAILS</h1>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Fee Duration</th>
+                    <th scope="col">Results</th>
+                    <th scope="col">Events</th>
+                    <th scope="col">Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">1</a></td>
+                    <td><a href="/std_fee">1'st Sem Fee</a></td>
+                    <td><a href="/get_data">1 Semister</a></td>
+                    <td><a href="#">Cricket</a></td>
+                    <td><a href="/std_att">Click</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">2</a></td>
+                    <td><a href="/std_fee">2'nd Sem Fee</a></td>
+                    <td><a href="/get_data">2 Semister</a></td>
+                    <td><a href="#">Basketball</a></td>
+                    <td><a href="#">Click</a></td>
+                </tr><tr>
+                    <td><a href="#">3</a></td>
+                    <td><a href="/std_fee">3'nd Sem Fee</a></td>
+                    <td><a href="/get_data">3 Semister</a></td>
+                    <td><a href="#">Basketball</a></td>
+                    <td><a href="#">Click</a></td>
+                </tr><tr>
+                    <td><a href="#">4</a></td>
+                    <td><a href="/std_fee">4'nd Sem Fee</a></td>
+                    <td><a href="/get_data">4 Semister</a></td>
+                    <td><a href="#">Basketball</a></td>
+                    <td><a href="#">Click</a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+  
+</body>
+</html>

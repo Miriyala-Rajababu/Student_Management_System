@@ -1,0 +1,22 @@
+<!-- display_max_ticket.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max ID Ticket</title>
+</head>
+<body>
+
+  <h2>Ticket with Maximum ID</h2>
+
+  {% if ticket %}
+    <p><strong>ID:</strong> {{ ticket.id }}</p>
+    <p><strong>Name:</strong> {{ ticket.name }}</p>
+    <p><strong>Email:</strong> {{ ticket.email }}</p>
+  {% else %}
+    <p>No tickets found.</p>
+  {% endif %}
+
+</body>
+</html>

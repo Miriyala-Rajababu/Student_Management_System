@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+      <form method="POST">
+        <!-- Form content here --><h1>STUDENTS FEE</h1>
+         
+    </form>
+    <form method="POST" action="/getby_id/">
+
+        {% csrf_token %}
+        <input type="search" name="search" placeholder="Search By ID">
+        <button type="submit" class="search">Click to Search</button> 
+        <button type="submit" class="getall "><a href="/get_data">Click to Get All Data</a></button>
+        <button type="submit" class="getall "><a href="/std_add">Add New Data</a></button>
+    </form>
+      <table class="table">
+        
+          <thead>
+              <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Number</th>
+                  <th scope="col">Fee Balance</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>John Doe</td>
+                  <td>john.doe@example.com</td>
+                  <td>(555) 123-4567</td>
+                  <td>$100.00</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>Jane Smith</td>
+                  <td>jane.smith@example.com</td>
+                  <td>(555) 765-4321</td>
+                  <td>$150.00</td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>Emily Johnson</td>
+                  <td>emily.johnson@example.com</td>
+                  <td>(555) 987-6543</td>
+                  <td>$200.00</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>Michael Brown</td>
+                  <td>michael.brown@example.com</td>
+                  <td>(555) 654-3210</td>
+                  <td>$250.00</td>
+              </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td>Sarah Wilson</td>
+                  <td>sarah.wilson@example.com</td>
+                  <td>(555) 321-0987</td>
+                  <td>$300.00</td>
+              </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>David Lee</td>
+                  <td>david.lee@example.com</td>
+                  <td>(555) 432-1098</td>
+                  <td>$350.00</td>
+              </tr>
+              
+          </tbody>
+      </table>
+      
+    
+    </section>
+    <footer class="footer">
+        <p class="footer__title">Thank YOu</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; Miriyala. All rigths reserved</p>
+    </footer>
+</body>
+</html>

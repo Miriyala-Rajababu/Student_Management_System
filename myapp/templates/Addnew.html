@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        button{
+            height: 50px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <form method="POST">
+            {% csrf_token %}
+            <!-- Form content here --><h1>ADD THE STUDENTS RESULTS</h1>
+             <input type="text" placeholder="Name" name="name">
+             <input type="text" placeholder="Cource" name="cource">
+             <input type="text" placeholder="Halltickets" name="hallticket">
+             <input type="text" placeholder="Result" name="result">
+             <button > Submit</button>
+        </form>
+        <div>
+            <form >
+
+                {% csrf_token %}
+
+            </form>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__title">Thank YOu</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; Miriyala. All rigths reserved</p>
+    </footer>
+</body>
+</html>

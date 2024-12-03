@@ -1,0 +1,96 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fffefe;
+    padding: 2rem; /* Use rem for padding */
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+}
+
+div {
+    font-size: 1.5rem; /* Use rem for font size */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Use rem for spacing */
+    width: 100%;
+}
+
+form input {
+    padding: 0.75rem; /* Adjust padding using rem */
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem; /* Use rem for font size */
+}
+
+form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    text-align: center;
+    margin-top: 0.75rem; /* Use rem for spacing */
+}
+
+form p a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+        border-radius: 20px;
+    }
+
+    div {
+        font-size: 1.25rem; /* Reduce font size */
+    }
+
+    form input, form button {
+        padding: 0.5rem; /* Reduce padding */
+        font-size: 0.875rem; /* Reduce font size */
+    }
+}
